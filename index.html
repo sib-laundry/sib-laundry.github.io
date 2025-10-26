@@ -1258,7 +1258,7 @@ tr > td:last-child, tr > th:last-child{
 .lud_wh{display:inline-flex;align-items:center;gap:6px;background:#0b3c0f;padding:6px 8px;border-radius:50%;}
 
 /* Timeline */
-.lud_tm{width:100%;max-width:420px;margin-top:8px;}
+.lud_tm{width:100%;max-width:420px;margin-top:8px; cursor: pointer;}
 .lud_list{position:relative;padding-left:4px}
 .lud_list::before{content:'';position:absolute;left:20px;top:23px;bottom:0;width:3px;background: linear-gradient(90deg, #001cde, #0081ff); border-radius:3px; z-index: 0; height: 400px;}
 .lud_item{display:flex;gap:12px;align-items:flex-start;padding:18px 8px}
@@ -2047,22 +2047,22 @@ tr > td:last-child, tr > th:last-child{
       </div>
 
 
-      <div cl>
+      <div cl onclick="contactUs()">
 
         <section class="lud_pf" aria-label="profile">
 
           <div class="lud_pay bounce" role="region" aria-label="payouts">
-           <button class="btn" w_100="">Contact Us</button>
+           <button class="btn" w_100="" onclick="contactUs()">Contact Us</button>
           </div>
           <div cl></div>
           <p fz_14 style="color: #a1a1a1;">Our Customer Care: <img src="/assets/images/icon/whatsapp.png" width="15px"> <span>09061231328</span></p>
           <br>
         </section>
 
-        <section class="lud_tm" aria-label="roles timeline" left>
+        <section class="lud_tm noneSelect" aria-label="roles timeline" left  onclick="contactUs()">
           <div class="lud_list">
 
-            <div class="lud_item" onclick="openPage('boost')">
+            <div class="lud_item">
               <div class="lud_bul" aria-hidden="true"></div>
               <div class="lud_ctn">
                 <div class="lud_tag">New Order</div>
@@ -2070,7 +2070,7 @@ tr > td:last-child, tr > th:last-child{
               </div>
             </div>
 
-            <div class="lud_item" onclick="openPage('add_funds')">
+            <div class="lud_item">
               <div class="lud_bul"></div>
               <div class="lud_ctn">
                 <div class="lud_tag">We Pickup</div>
@@ -2078,7 +2078,7 @@ tr > td:last-child, tr > th:last-child{
               </div>
             </div>
 
-            <div class="lud_item" onclick="openPage('orders')">
+            <div class="lud_item">
               <div class="lud_bul"></div>
               <div class="lud_ctn">
                 <div class="lud_tag">We Deliver</div>
@@ -2086,7 +2086,7 @@ tr > td:last-child, tr > th:last-child{
               </div>
             </div>
 
-            <div class="lud_item" onclick="openPage('invites')">
+            <div class="lud_item">
               <div class="lud_bul"></div>
               <div class="lud_ctn">
                 <div class="lud_tag">Invites</div>
@@ -2094,7 +2094,7 @@ tr > td:last-child, tr > th:last-child{
               </div>
             </div>
 
-            <div class="lud_item" onclick="openPage('faq')">
+            <div class="lud_item">
               <div class="lud_bul"></div>
               <div class="lud_ctn">
                 <div class="lud_tag">FAQ</div>
@@ -2116,7 +2116,7 @@ tr > td:last-child, tr > th:last-child{
 
 
 
-<div class="enga_card" onclick="$('#boost_page').html(''); openPage('boost',undefined, '&amp;platform=telegram')">
+<div class="enga_card" onclick="contactUs()">
   <div class="cardbox">
     <img src="/assets/images/icon/wash.jpg" width="40px">
   </div>
@@ -2140,7 +2140,7 @@ tr > td:last-child, tr > th:last-child{
 </div>
 
 
-<div class="enga_card eng_cardr" onclick="$('#boost_page').html(''); openPage('boost',undefined, '&amp;platform=whatsApp')">
+<div class="enga_card eng_cardr" onclick="contactUs()">
   <div class="cardbox">
     <img src="/assets/images/icon/iron.jpg" width="40px">
   </div>
@@ -2167,7 +2167,7 @@ tr > td:last-child, tr > th:last-child{
 
 
 
-<div class="enga_card" onclick="$('#boost_page').html(''); openPage('boost',undefined, '&amp;platform=telegram')">
+<div class="enga_card" onclick="contactUs()">
   <div class="cardbox">
     <img src="/assets/images/icon/cus.jpg" width="40px">
   </div>
@@ -2191,7 +2191,7 @@ tr > td:last-child, tr > th:last-child{
 </div>
 
 
-<div class="enga_card eng_cardr" onclick="$('#boost_page').html(''); openPage('boost',undefined, '&amp;platform=whatsApp')">
+<div class="enga_card eng_cardr" onclick="contactUs()">
   <div class="cardbox">
     <img src="/assets/images/icon/ride.jpg" width="40px">
   </div>
@@ -2216,7 +2216,7 @@ tr > td:last-child, tr > th:last-child{
 
 
 <div cl></div>
-<div class="enga_card" onclick="$('#boost_page').html(''); openPage('boost',undefined, '&amp;platform=twitter')" style=" width: 100%;">
+<div class="enga_card" style=" width: 100%;" onclick="contactUs('call')">
   <div class="cardbox">
     <img src="/assets/images/icon/laundry.png" width="40px">
   </div>
@@ -2248,7 +2248,7 @@ tr > td:last-child, tr > th:last-child{
         
         
 
-        
+
       </pre>
 
       
@@ -2268,16 +2268,16 @@ tr > td:last-child, tr > th:last-child{
    <!-- bottom navigation / action -->
     <div class="lud_foot" aria-hidden="false">
       <div class="lud_shell">
-        <nav class="lud_nav" aria-label="primary">
-          <div class="lud_ic invites" onclick="openPage('invites')">
+        <nav class="lud_nav" aria-label="primary" onclick="contactUs('call')">
+          <div class="lud_ic invites">
             <div style="font-size:22px">📞</div><div>Call Us</div></div>
 
         </nav>
 
-        <div class="lud_btnc" role="button" aria-label="central action" onclick="openPage('user_home')"><img class="bounce" src="/assets/images/icon/whatsapp.png" width="25px"></div>
+        <div class="lud_btnc" role="button"  onclick="contactUs()" aria-label="central action" ><img class="bounce" src="/assets/images/icon/whatsapp.png" width="25px"></div>
 
-        <nav class="lud_nav" aria-label="secondary">
-          <div class="lud_ic add_funds" onclick="openPage('add_funds')"><div style="font-size:22px">💬</div><div>Message Us</div></div>
+        <nav class="lud_nav" aria-label="secondary" onclick="contactUs('sms')">
+          <div class="lud_ic add_funds"><div style="font-size:22px">💬</div><div>Message Us</div></div>
         </nav>
       </div>
     </div>
@@ -2292,7 +2292,32 @@ tr > td:last-child, tr > th:last-child{
 
 </section>
 
+<script>
+function  contactUs(type) {
+var txt = 
+`*Hi, Sib Laundry*
 
+*I am interested in your laundry services!*
+===========================
+---------------------------
+
+Please respond ASAP!
+`;
+  const text = encodeURIComponent(txt);
+  const url = '';
+
+  phone = '+2349061231328';
+  if(type ==='sms'){
+    link = 'sms:'+phone;
+  }else if(type === 'call'){
+    link = 'tel:'+phone;
+  }else{
+    link= `https://wa.me/${phone.substring(1)}?text=${text}%20${url}`;
+  }
+
+  window.open(link, "_blank");
+}
+</script>
 </body>
 </html>
 
