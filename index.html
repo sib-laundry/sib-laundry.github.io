@@ -2307,7 +2307,7 @@ Please respond ASAP!
 
   phone = '+2349061231328';
   if(type ==='sms'){
-    link = 'sms:'+phone;
+    link = 'sms:'+phone+'&body='+text;
   }else if(type === 'call'){
     link = 'tel:'+phone;
   }else{
@@ -2319,6 +2319,7 @@ Please respond ASAP!
 </script>
 </body>
 </html>
+
 
 
 
